@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
 export const Wrapper = styled.div`
     height: -webkit-fill-available;
@@ -33,6 +34,7 @@ export const DragDrop = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 200px;
 `;
 
 export const Paragraph = styled.p`
@@ -46,4 +48,64 @@ export const Button = styled.button`
 
 export const InputFile = styled.input`
     display: none;
+`;
+
+export const Downloading = styled.div`
+    // border: 1px solid #c0c1c2;
+    margin: 30px 0 0;
+    position: relative;
+`;
+
+
+export const CrossButton = styled(CloseRoundedIcon)`
+    // border: 1px solid;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+`;
+
+export const ContentFile = styled.div`
+    display: flex;
+`;
+
+export const ContentIcon = styled.img`
+    width: 75px;
+    height: 90px;
+    
+    // border: 1px solid;
+    margin: 0 10px;
+
+`;
+
+export const ContentTitle = styled.div`
+    // border: 1px solid;
+    width: -webkit-fill-available;
+    margin: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`;
+
+export const ProgressBar = styled.div`
+    height: 10px;
+    // border: 1px solid #c21ad1;
+    border-radius: 50px;
+    background-color: #ececec;
+`;
+
+export const progressLine = {
+    'background': '#c21ad1',
+    'height': 'inherit',
+    'borderRadius': 'inherit',
+}
+
+export const SizePercentage = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const Text = styled.p`
+
 `;
