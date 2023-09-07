@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 80px;
+    box-shadow: 0 6px 15px -5px #ddd;
 `;
 
 export const Icon = styled.div`
@@ -38,6 +39,7 @@ export const Text = styled.p`
     font-size: 16px;
     color: ${props => props.active ?  '#f26450' : '#152b5a'};
     font-weight: 500;
+    cursor: pointer;
 `;
 
 export const Button = styled.button`

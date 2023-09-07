@@ -78,14 +78,14 @@ function Upload() {
   return (
     <Wrapper>
       <Card>
-        <Title>Upload</Title>
+        {/* <Title>Upload</Title> */}
         <DragDrop
           onDragEnter={dragEnter}
           onDragOver={dragOver}
           onDrop={drop}
         >
-          <Paragraph>Drag and drop files here Or </Paragraph>
-          <Button onClick={() => inputRef.current.click()}>Select file</Button>
+          {/* <Paragraph>Drag & drop file here</Paragraph> */}
+          <Button onClick={() => inputRef.current.click()}>Drag & drop file here</Button>
           <InputFile
             type="file"
             name="file"

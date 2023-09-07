@@ -15,10 +15,13 @@ export const Card = styled.div`
     // height: calc(100% - 300px);
     min-width: 300px;
     border-radius: 5px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    // box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    box-shadow: 0 2px 15px -2px #3d61af4d;
     // background: aliceblue;
 
-    padding: 30px 50px;
+    // padding: 30px 50px;
+    padding: 25px;
+    border-radius: 30px;
 `;
 
 export const Title = styled.h2`
@@ -27,9 +30,12 @@ export const Title = styled.h2`
 `;
 
 export const DragDrop = styled.div`
-    border: 1px dashed #c0c1c2;
+    // border: 1px dashed #c0c1c2;
+    border: 2px dashed #f2644f;
     height: inherit;
     border-radius: inherit;
+    // border-radius: 18px;
+    background-color: #fef6f3;
     
     display: flex;
     justify-content: center;
@@ -39,11 +45,23 @@ export const DragDrop = styled.div`
 
 export const Paragraph = styled.p`
     color: #444445;
-    margin-right: 10px
+    margin-right: 10px;
+    font-family: Montserrat,sans-serif;
 `;
 
 export const Button = styled.button`
-    
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: Montserrat,sans-serif;
+    color: #444;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 18px!important;
+    font-weight: 300!important;
+    line-height: 36px!important;
+    margin: 0!important;
 `;
 
 export const InputFile = styled.input`
